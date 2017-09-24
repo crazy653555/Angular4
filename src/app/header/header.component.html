@@ -23,9 +23,9 @@
     </div>
   </div>
   <div class="title-wrapper">
-    <div class="container">
+    <div class="container" (click)="showAlert()">
 
-      <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web">
+      <img src="/assets/images/logo.png" (click)="changeTitle($event)" class="pull-left logo" alt="The Will Will Web">
 
       <div class="pull-left">
         <h1><a [href]="link">{{title}}</a></h1>
