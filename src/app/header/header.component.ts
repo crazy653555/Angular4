@@ -25,6 +25,6 @@ export class HeaderComponent implements OnInit {
   }
 
   showAlert() {
-    alert('wait');
+    // alert('wait');
   }
 }
