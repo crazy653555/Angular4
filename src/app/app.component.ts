@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   searchText = '1234';
+
+  lgContent(element) {
+    console.log(element);
+    element.remove();
+  }
 }
