@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   link = 'http://blog.miniasp.com/0000';
   title = 'test 123 ';
 
+  ishighlight = true;
+
   constructor() { }
 
   ngOnInit() {
@@ -19,6 +21,7 @@ export class HeaderComponent implements OnInit {
     // alert('wait');
     $event.stopPropagation();
     this.title = 'Hello';
+    this.ishighlight = !this.ishighlight;
   }
 
   showAlert() {
